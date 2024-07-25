@@ -1,9 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import FunctionComponent from './component/function_component';
-import ClassComponent from './component/class_component';
-import Header from './component/header';
-import Footer from './component/footer';
 import { Link, Route, Routes } from 'react-router-dom';
 import Home from './component/home';
 import Products from './component/products';

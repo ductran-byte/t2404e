@@ -7,16 +7,10 @@ function Layout1({children}) {
             <Header/>
             <ul className='nav'>
                 <li>
-                    <Link to={"/products"}>Home</Link>
-                </li>
-                <li>
-                    <Link to={"/hook"}>Liên Hệ</Link>
+                    <Link to={"/"}>Home</Link>
                 </li>
                 <li>
                     <Link to={"/giohang"}>Giỏ Hàng</Link>
-                </li>
-                <li>
-                    <Link to={"/students"}>Admin</Link>
                 </li>
 
 

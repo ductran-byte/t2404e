@@ -1,10 +1,10 @@
 import {db} from "./dexie";
 
-const saveStudent = async (name, age, id, isAddMode) => {
+const saveStudent = async (name, age, pic, id, isAddMode) => {
     if (isAddMode) {
-        db.student.add({name:name, age:age});
+        db.student.add({name, age, pic, id});
     } else {
-        db.student.update(parseInt(id), {name:name, age:age});
+        db.student.update(parseInt(id), {name, age, pic});
     }
 }
 

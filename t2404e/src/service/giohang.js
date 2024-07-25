@@ -1,7 +1,7 @@
 import {db} from "./dexie";
 
-const addItemToGioHang = async (name, quantity, price) => {
-        db.giohang.add({name:name, quantity:quantity, price:price, totalPrice:price*quantity});
+const addItemToGioHang = async (name, qty, price, pic) => {
+        db.giohang.add({name, qty, price, pic, totalPrice:price*qty});
 }
 
 

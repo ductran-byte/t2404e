@@ -1,5 +1,4 @@
 import { createContext, useEffect, useState } from "react";
-import Component1 from "./Component1";
 const NameContext = createContext();
 
 function HookComponent() {
@@ -40,7 +39,6 @@ function HookComponent() {
     return(
         <NameContext.Provider value={value}>
             <h1>Hook Component</h1>
-            <Component1 />   
             <h1>{name}</h1>
             <h1>{counter}</h1>
             <button onClick={handleName}>Change name</button>

@@ -1,20 +1,23 @@
 import { useEffect, useState } from "react";
-import * as studentService from "../service/giohang"
+import * as giohang from "../service/giohang"
 import "../css/giohang.css";
 import { Link } from "react-router-dom";
 
-function ListStudent() {
+function Giohang() {
     const [students, setStudents] = useState([]);
+
     useEffect(()=> {
         const getAll = async () => {
-            const result = await studentService.getAllGioHang();
+            const result = await giohang.getAllGioHang();
             setStudents(result);
         }
         getAll();
     }, []);
 
+    console.log(students)
+
     const deleteStd = async(id) => {
-        const stds = await studentService.deleteGioHang(id);
+        const stds = await giohang.deleteGioHang(id);
         setStudents(stds);
     }
 
@@ -33,13 +36,13 @@ function ListStudent() {
                 <tbody>
                 {students.map(item => (
                     <tr key={item.id}>
-                        <th>{item.id}</th>
-                        <th>{item.name}</th>
-                        <th>{item.quantity}</th>
-                        <th>{item.price}</th>
-                        <th>
+                        <td>{item.id}</td>
+                        <td>{item.name}</td>
+                        <td>{item.qty}</td>
+                        <td>{item.price}</td>
+                        <td>
                             <button onClick={() => deleteStd(item.id)}>Delete</button>
-                        </th>
+                        </td>
                     </tr>
                 ))}
                 </tbody>
@@ -48,4 +51,4 @@ function ListStudent() {
     );
 }
 
-export default ListStudent;
+export default Giohang;
