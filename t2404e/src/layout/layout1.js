@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import Header from "../component/header";
-import Footer from "../component/footer";
 import "../css/layout1.css";
 function Layout1({children}) {
     return (
@@ -8,25 +7,24 @@ function Layout1({children}) {
             <Header/>
             <ul className='nav'>
                 <li>
-                    <Link to={"/"}>Home</Link>
-                </li>
-                <li>
-                    <Link to={"/products"}>Sản Phẩm</Link>
+                    <Link to={"/products"}>Home</Link>
                 </li>
                 <li>
                     <Link to={"/hook"}>Liên Hệ</Link>
                 </li>
                 <li>
-                    <Link to={"/students"}>List Student</Link>
+                    <Link to={"/giohang"}>Giỏ Hàng</Link>
                 </li>
                 <li>
-                    <Link to={"/students"}>Giỏ Hàng</Link>
+                    <Link to={"/students"}>Admin</Link>
                 </li>
+
+
             </ul>
 
             {children}
 
-            <Footer/>
+
         </>
 
     );
