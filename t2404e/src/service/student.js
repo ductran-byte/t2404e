@@ -4,7 +4,7 @@ const saveStudent = async (name, age, pic, id, isAddMode) => {
     if (isAddMode) {
         db.student.add({name, age, pic, id});
     } else {
-        db.student.update(parseInt(id), {name, age, pic});
+        db.student.update(parseInt(id), {name, age, pic, id});
     }
 }
 

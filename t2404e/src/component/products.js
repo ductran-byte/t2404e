@@ -19,7 +19,7 @@ function Products() {
             <div className="products-header">
                 <h1>Danh Sách Sản Phẩm</h1>
             </div>
-            <div className={`product-list ${students.length < 4 ? 'center-items' : ''}`}>
+            <div className={`product-list ${students.length < 5 ? 'center-items' : ''}`}>
                 {students.map(student => (
                     <Product key={student.id} product={student} />
                 ))}

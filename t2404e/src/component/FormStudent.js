@@ -4,7 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 
 function FormStudent() {
     const [name, setName] = useState("");
-    const [age, setAge] = useState(18);
+    const [age, setAge] = useState("");
     const [pic, setPic] = useState('');
     const navigate = useNavigate();
     const { id } = useParams();

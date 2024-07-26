@@ -1,0 +1,58 @@
+/* list_student.css (hoặc tên file CSS của bạn) */
+.table {
+	width: 80%; /* Hoặc một giá trị cụ thể khác, ví dụ: 600px */
+	border-collapse: collapse;
+	margin-bottom: 20px; /* Thêm khoảng cách dưới bảng */
+	}
+
+.th, td {
+	border: 1px solid #ddd;
+	padding: 12px; /* Tăng padding cho dễ đọc */
+	text-align: left;
+	}
+
+.th {
+	background-color: #f0f0f5; /* Màu nền nhạt hơn */
+	font-weight: 600; /* Độ đậm vừa phải */
+	}
+.th1 {
+	width: 2%;
+	background-color: #f0f0f5; /* Màu nền nhạt hơn */
+	font-weight: 600; /* Độ đậm vừa phải */
+	}
+
+.img {
+	max-width: 80px; /* Giảm kích thước ảnh */
+	height: auto;
+	border-radius: 4px; /* Bo góc ảnh */
+	}
+
+.button, .a {
+	display: inline-block;
+	padding: 8px 16px; /* Tăng padding cho nút */
+	border: none;
+	border-radius: 5px; /* Bo góc nhiều hơn */
+	background-color: #4CAF50; /* Màu xanh lá cây */
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	transition: background-color 0.3s; /* Hiệu ứng chuyển màu khi hover */
+	}
+
+.button:hover, .a:hover {
+	background-color: #45a049; /* Màu xanh đậm hơn khi hover */
+	}
+
+/* Tạo kiểu cho nút Add Item */
+.add-item-button {
+	display: block; /* Đặt nút trên một dòng riêng */
+	margin-bottom: 15px; /* Thêm khoảng cách dưới nút */
+	text-align: center; /* Căn giữa nút */
+	}
+
+.add-item-button a {
+	/* Tạo kiểu cho liên kết trong nút Add Item */
+	display: block;
+	width: 100%; /* Chiếm toàn bộ chiều rộng của nút */
+	}
+
